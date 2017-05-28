@@ -1,0 +1,7 @@
+{
+  "babelrc": false,
+  "presets": [
+    "react",
+    ["es2015", { "loose": true, "modules": false }]
+  ]
+}
