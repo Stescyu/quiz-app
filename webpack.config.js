@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -28,5 +30,16 @@ module.exports = {
         loader: 'babel-loader',
       },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: path.resolve('index.html'),
+    }),
+  ],
+  watchOptions: {
+    aggregateTimeout: 300,
+    ignored: /node_modules/,
+    poll: 1000,
   },
 };

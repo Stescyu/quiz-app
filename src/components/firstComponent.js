@@ -3,7 +3,7 @@ import React from 'react';
 const FirstComponent = () => {
   return (
     <div>
-      <p>What up blood</p>
+      <p>My First Component</p>
     </div>
   );
 };
