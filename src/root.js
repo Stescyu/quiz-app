@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import Data from '../data.json';
 
-import FirstComponent from './components/firstComponent';
+import Quiz from './components/Quiz';
 
-// import store from './store';
+import globalStyles from './global.css';
 
 ReactDOM.render(
-  <FirstComponent />,
+  <Quiz data={Data} />,
   document.getElementById('root'),
 );
